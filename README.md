@@ -110,3 +110,5 @@ See the `/examples` directory for two sample scripts that demonstrate how to use
 
 ### Known Issues
 * The "trawler" mode is not yet implemented.
+* The "bunyan" mode has only been tested with simple Bunyan configurations.
+* Currently doesn't support specifying different config for different environments.
