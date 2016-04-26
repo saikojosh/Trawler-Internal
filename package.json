@@ -7,7 +7,7 @@
     "url": "https://github.com/saikojosh/Trawle-Internal/issues"
   },
   "name": "trawler-internal",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Provides an API for internal logging to the console and various streams.",
   "keywords": [
     "console",
