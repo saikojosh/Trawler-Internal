@@ -21,9 +21,9 @@ module.exports = class TrawlerInternal {
     this.config = extender.defaults({
       appName: null,
       mode: 'trawler',
-      bunyanConfig: {},
       logDir: null,
       logFilename: null,
+      bunyanConfig: {},
     });
 
     // Private variables.
