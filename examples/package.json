@@ -1,0 +1,21 @@
+{
+  "name": "example-app",
+  "version": "1.0.0",
+  "trawler": {
+    "internal": {
+      "mode": "bunyan",
+      "logDir": "/logs",
+      "logFilename": "ops.log",
+      "bunyanConfig": {
+        "level": "debug",
+        "src": true,
+        "streams": [{
+          "type": "rotating-file",
+          "level": "debug",
+          "period": "1d",
+          "count": 30
+        }]
+      }
+    }
+  }
+}
