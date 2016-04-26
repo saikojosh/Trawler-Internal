@@ -71,6 +71,11 @@ module.exports = class TrawlerInternal {
     // Extend our config.
     this.config = extender.defaults(this.config, useConfig);
 
+    // Checks.
+    if (!this.config.appName) { throw new Error(clc.redBright('You must specify the "appName" config.')); }
+    if (!this.config.logDir) { throw new Error(clc.redBright('You must specify the "logDir" config.')); }
+    if (!this.config.logFilename) { throw new Error(clc.redBright('You must specify the "logFilename" config.')); }
+
     // Ensure we build the full log dir path.
     this.config.logDir = pathify(process.cwd(), this.config.logDir, this.config.appName);
 
