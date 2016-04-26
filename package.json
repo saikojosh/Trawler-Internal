@@ -1,0 +1,41 @@
+{
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/saikojosh/Trawler-Internal.git"
+  },
+  "bugs": {
+    "url": "https://github.com/saikojosh/Trawle-Internal/issues"
+  },
+  "name": "trawler-internal",
+  "version": "0.0.1",
+  "description": "Provides an API for internal logging to the console and various streams.",
+  "keywords": [
+    "console",
+    "log",
+    "logging",
+    "output",
+    "rotate",
+    "rotation",
+    "crash",
+    "error",
+    "catch",
+    "bunyan"
+  ],
+  "main": "index.js",
+  "author": "Josh Cole <saikojosh@gmail.com> (http://www.JoshuaCole.me)",
+  "contributors": [
+    {
+      "name": "Josh Cole",
+      "email": "saikojosh@gmail.com"
+    }
+  ],
+  "dependencies": {
+    "bunyan": "1.5.x",
+    "cli-color": "1.1.x",
+    "object-extender": "1.2.x"
+  },
+  "license": "MIT",
+  "engines": {
+    "node": "5.x"
+  }
+}
