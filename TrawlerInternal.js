@@ -77,7 +77,11 @@ module.exports = class TrawlerInternal {
     if (!this.config.logFilename) { throw new Error(clc.redBright('You must specify the "logFilename" config.')); }
 
     // Ensure we build the full log dir path.
-    this.config.logDir = pathify(process.cwd(), this.config.logDir, this.config.appName);
+    if (this.config.logDir[0] === '/' || this.config.logDir[0] === '~') {
+      this.config.logDir = pathify(this.config.logDir, this.config.appName);
+    } else {
+      this.config.logDir = pathify(process.cwd(), this.config.logDir, this.config.appName);
+    }
 
     // Create the app log dir syncrhonously so it's ready before any other modules are required.
     try {
